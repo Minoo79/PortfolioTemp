@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My Bio</title>
+  </head>
+  <body class="vh-100 bg-dark text-light">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a href="" class="navbar-brand"><span class="badge bg-info shadow">TWIISE</span></a>
+        <button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="2-index: 10"
+        <li class="nav-item">
+          <a href="#" class="nav-link active"
+          data-bs-toggle="collapse"
+          data-bs-target=".multi-collapse"
+          aria-expanded="false"
+          aria-controls="About Contact"
+          >info</a>
+        </li>
+        <li class="nav-item">
+          <a href="#About"
+          role="button"
+          class="nav-link"
+          data-bs-toggle="collapse"
+          aria-expanded="false"
+          aria-controls="About"
+          >About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#Contact" class="nav-link"
+          href="#Contact"
+            role="button"
+            data-bs-toggle="collapse"
+            aria-expanded="false"
+            aria-controls="Contact"
+          >Contact</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- header-->
+  <header class="container fixed-top text-end mt-5">
+    <h1 class="display-1">
+      Welcome to
+      <span class="badge bg-secondary">TWIISE</span>
+    </h1>
+    <h2 class="display-3">
+      The Smell Of Heaven
+    </h2>
+    <!-- Header > Portfolio & Email Btn Group  -->
+    <div class="btn-group">
+    <!-- Profile Btn -->
+    <button class="btn btn-info" type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#Email"
+    aria-controls="Email"
+    >
+    <i class="bi bi-envelope-open"></i>
+  </button>
+    <!-- Email Btn-->
+    <button class="btn btn-outline-info text-uppercase" type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#portfolio"
+    aria-controls="portfolio"
+    >
+    my portfolio
+  </button>
+    </div>
+
+
+    <!-- Header -- >
+    <!-- About & Contact dropdown content -->
+    <div class="row mt-3">
+    <!-- About -->
+    <div class="col-md-6 mt-3">
+      <div class="collapse multi-collapse" id="About">
+         <div class="card card-body text-start shadow bg-dark-transparent">
+           <h5 class="card-title text-info">About</h5>
+           <div class="card-text">
+             <h3 class="text-white-50 ms-3">TWIISE</h3>
+             <ul class="list-unstyled ms-5">
+               <li>Just Leave it to US</li>
+               <li>Web Developer</li>
+               <li>Video Creator</li>
+               <li>The First & The LAST</li>
+             </ul>
+           </div>
+         </div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div class="col-md-6 mt-3">
+      <div class="collapse multi-collapse" id="Contact">
+         <div class="card card-body text-start shadow bg-dark-transparent">
+           <h5 class="card-title text-info">Contact</h5>
+           <div class="card-text">
+             <h3 class="text-white-50 ms-3">Get In Touch</h3>
+             <ul class="list-unstyled ms-5">
+               <li><i class="bi bi-house me-2 text-info"></i>City: Tehran</li>
+               <li><i class="bi bi-signpost me-2 text-info"></i>Street: 21 Savage Str</li>
+               <li><i class="bi bi-telephone me-2 text-info"></i>Phone: +000-222-555</li>
+               <li><i class="bi bi-envelope me-2 text-info"></i>Email: contact@gmail.com</li>
+             </ul>
+           </div>
+         </div>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <!-- Profile img -->
+  <img src="blue.jpg"
+  alt="profile-pic"
+  class="position-absolute top-0 img-fluid profile-pic">
+  <!-- portfolio offcanvas content -->
+  <div class="offcanvas offcanvas-start bg-dark"
+  id="portfolio"
+  tabindex="-1"
+  aria-labelledby="offcanvasPortfolioLabel"
+  >
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title text-info">Portfolio</h1>
+      <button class="btn-close btn-close-white"
+      data-bs-dismiss="offcanvas"
+      aria-label="close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum.
+      </p>
+      <ul class="list-group">
+        <a href="#"
+        class="list-group-item list-group-item-info list-group-item-action mb-2">
+        <i class="bi bi-globel2"></i>Bio Website Themes</a>
+        <a href="#"
+        class="list-group-item list-group-item-info list-group-item-action mb-2">
+        <i class="bi bi-globel2"></i>Business Directory Website Themes</a>
+        <a href="#"
+        class="list-group-item list-group-item-info list-group-item-action mb-2">
+        <i class="bi bi-globel2"></i>Resume Website Themes</a>
+        <a href="#"
+        class="list-group-item list-group-item-info list-group-item-action mb-2">
+        <i class="bi bi-globel2"></i>Photo Sharing Website</a>
+        <a href="#"
+        class="list-group-item list-group-item-info list-group-item-action mb-2">
+        <i class="bi bi-globel2"></i>E-Commerce Website</a>
+      </ul>
+    </div>
+  </div>
+  <!-- Email offcanvas content -->
+  <div class="offcanvas offcanvas-bottom bg-dark"
+  tabindex="-1"
+id="Email"
+aria-labelledby="offcanvasEmailLabel"
+  style="height: 50vh">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title text-info"
+    id="offcanvasEmailLabel"
+    >
+    Email
+  </h1>
+  <button class="btn-close btn-close-white"
+  data-bs-dismiss="offcanvas"
+  aria-label="close"
+  ></button>
+  </div>
+<div class="offcanvas-body d-flex w-75 flex-column m-auto">
+  <form class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First Name" aria-label="First Name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name">
+    </div>
+    <div class="col-12 mt-3">
+      <textarea class="w-100" rows="8" placeholder="Say What Your Heart Says"></textarea>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-outline-info mt-3 w-100">Send</button>
+    </div>
+  </form>
+</div>
+  </div>
+  <!-- footer -->
+  <footer class="w-100 fixed-bottom bg-dark-transparent text-lg-start text-md-center">
+    <div class="row align-items-center p-3">
+      <h2 class="col justify-content-around">More Than 1,095 Days In This Game</h2>
+      <i class="bi bi-bootstrap-fill
+      w-100
+      btn-info
+      bg-info
+      rounded-3
+      col-md
+      text-center
+      py-2
+      mx-2
+      fs-4"></i>
+<!--Social Icons-->
+<div class="col ms-2 text-muted mt-sm-4 fs-2">
+  <ul class="list-unstyled d-flex flex-row justify-content-around">
+    <li><a href="https://telegram.com.me/minouplaylist"><i class="bi bi-telegram text-white-50"></i></a></li>
+    <li><a href="https://instagra.com.me/lminoul"><i class="bi bi-instagram text-white-50"></i></a></li>
+    <li><a href="#"><i class="bi bi-youtube text-white-50"></i></a></li>
+
+
+
+  </ul>
+
+</div>
+    </div>
+  </footer>
+
+    <!-- bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  </body>
+</html>
